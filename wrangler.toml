@@ -2,7 +2,7 @@ name = "warden-worker"
 main = "src/entry.js"
 compatibility_date = "2025-09-19"
 keep_vars = true
-workers_dev = false
+workers_dev = true
 preview_urls = false
 
 [durable_objects]
@@ -111,7 +111,7 @@ crons = ["0 3 * * *"]
 [[d1_databases]]
 binding = "vault1"
 database_name = "vault1"
-database_id = "${D1_DATABASE_ID}"
+database_id = "64432703-eaa8-4bb6-8afd-14bfabd9876f"
 migrations_dir = "migrations"
 
 # R2 bucket for file attachments (optional, requires credit card)
